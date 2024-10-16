@@ -238,6 +238,11 @@ header{
     margin-top: 20px;
 }
 
+.box__card-primary img{
+    width: 100px;
+    height: 100px;
+}
+
 /*End Estilos Generales Cards*/
 
 /*Sobre Nosotros*/
