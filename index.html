@@ -28,11 +28,11 @@
                 <!--Menú-->
                 <nav>
                     <ul>
-                        <li><a href="#">Hogar</a></li>
-                        <li><a href="#">Informacion</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Planes</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#home">Hogar</a></li>
+                        <li><a href="#about">Informacion</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#contact">Contacto</a></li>
                     </ul>
                 </nav>
                 <!--End Menu-->
@@ -66,7 +66,7 @@
 	<main>
         <!--Inicio-->
         <!--Portada Inicio-->
-        <div class="container__cover div__offset">
+        <div id="home" class="container__cover div__offset">
             <div class="cover">
                 <section class="text__cover">
                     <h1>Equipate para tu mejor rendimiento</h1>
@@ -107,7 +107,7 @@
         </div>
 		<!--End Generador de Confianza-->
 		<!--Sobre Nosotros - Nuestro Equipo-->
-        <div class="container__about div__offset">
+        <div id="about" class="container__about div__offset">
             <div class="about">
                 <div class="text__about">
                     <h1>Somos mas que una tienda de ropa deportiva, somos tu equipo.</h1>
@@ -122,7 +122,7 @@
         </div>
 		<!--End Sobre Nosotros - Nuestro Equipo-->
 		<!--Servicios-->
-        <div class="container__service container__card-primary div__offset">
+        <div id="services" class="container__service container__card-primary div__offset">
             <div class="service card__primary">
                 <div class="text__service text__card-primary">
                     <p>QUE HACEMOS</p>
@@ -182,7 +182,7 @@
         </div>
 		<!--End Servicios-->
 		<!--Proyectos-->
-        <div class="container__proyect div__offset">
+        <div id="projects" class="container__proyect div__offset">
             <div class="service card__primary">
                 <div class="text__service text__card-primary">
                     <p>NUESTROS PROYECTOS</p>
@@ -206,7 +206,7 @@
         </div>
 		<!--End Proyectos-->
         <!--Nuestro equipo-->
-        <div class="container__trust container__card-primary">
+        <div id="team" class="container__trust container__card-primary">
             <div class="trust card__primary">
                 <div class="text__trust text__card-primary">
                     <p>Nuestro equipo</p>
@@ -238,9 +238,63 @@
         <!--Mapa-->
         <div>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d18782.597023482616!2d-73.35421282381216!3d8.247458356397406!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1730125947970!5m2!1ses-419!2sco" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d18782.597023482616!2d-73.35421282381216!3d8.247458356397406!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1730125947970!5m2!1ses-419!2sco" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
+        <!--formulario-->
+        <div id="contact" class="contenedor-formulario">
+            <h2>Hablanos de tu idea</h2>
+            <form>
+                <div class="grupo-formulario">
+                    <label for="nombre">Nombres</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="Apellido">Apellidos</label>
+                    <input type="text" id="Apellidos" name="Apellidos">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="Tema">Tema</label>
+                    <input type="text" id="Tema" name="Tema">
+                </div>
+                <div class="grupo-formulario">
+                    <label for="Idea">Cuentanos tu idea</label>
+                    <textarea id="Idea" name="Idea" rows="4" required></textarea>
+                </div>
+                <button type="submit">saber mas</button>
+            </form>
+        </div>
+        <!--end formulario-->
+        <!--footer-->
+        <footer>
+            <div class="footer-container">
+                <div class="footer-content">
+                    <h3>Contacto</h3>
+                    <p>Email: contacto@vitalspot.com</p>
+                    <p>Teléfono: +57 123 456 7890</p>
+                </div>
+                <div class="footer-content">
+                    <h3>Síguenos</h3>
+                    <div class="socialMedia">
+                        <a href="#">
+                            <img src="img/social_media/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#">
+                            <img src="img/social_media/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="#">
+                            <img src="img/social_media/twitter.png" alt="Twitter">
+                        </a>
+                        <a href="#">
+                            <img src="img/social_media/youtube.png" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <p>&copy; 2023 Vital Spot. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>        
     </main>
 	<!--end main-->
 </body>
