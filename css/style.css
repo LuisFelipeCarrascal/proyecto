@@ -282,10 +282,20 @@ header{
 .image__about{
     width: 100%;
     display: flex;
+    justify-content: space-between; /* Centra las imágenes horizontalmente */
+    gap: 10px; /* Espacio entre las imágenes */
+    flex-wrap: wrap;
 }
 
 .image__about img{
-    width: 300px;
+    width: 48%;
+    height: auto; 
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.image__about img:hover{
+    transform: scale(1.05);
 }
 
 /*End Sobre Nosotros*/
