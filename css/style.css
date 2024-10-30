@@ -322,7 +322,7 @@ header{
 .card__proyect {
     width: 300px;
     height: 300px;
-    padding: 20px;
+    padding: 40px;
     box-sizing: border-box;
     border-radius: 10px;
     color: #fff;
@@ -333,6 +333,7 @@ header{
 
 .card__proyect h2, .card__proyect p {
     margin: 0;
+    color: white;
 }
 
 .card__proyect:hover {
@@ -375,16 +376,20 @@ container__card-primary{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 40px;
 }
 
 .box__card-primary{
-    max-width: 350px;
-    padding: 60px 40px;
+    width: 300px;
+    height: 400px;
+    padding: 20px;
     border: 1px solid #e6e6e6;
     border-radius: 20px;
     margin: 14px;
     transition: all 300ms;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
 }
 
 .box__card-primary:hover{
@@ -394,17 +399,16 @@ container__card-primary{
 
 .box__card-primary h2{
     font-size: var(--text_title_card);
-    margin-top: 40px;
-    font-weight: 500;
+    margin: 0px; 
 }
 
 .box__card-primary p{
-    margin-top: 20px;
+    margin-top: 10px;    
 }
 
 .box__card-primary img{
     width: 120px;
-    height: 120px;
+    height: 120x;
 }
 /*mapa*/
 .map-container{
